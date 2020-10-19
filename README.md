@@ -136,6 +136,7 @@ If time permits, we would like to research and implement the following in our pr
  - LSTMs neural networks are special types of Recurrent neural networks that have loops in them, allowing information to persist. This means that not only were they able to update the weights of their nodes frequently, but they were also able to take into consideration previous weights, which makes them ideal for time-series data such as stock price data.
  - With a **9-layer neural network,** having 4 50-node LSTM layers followed alternatively by 4 0.2 dropout layers and the last layer being a Dense layer with adam optimizer and mean squared error as the loss function, the model **trained over 100 epochs** to give an **RMSE value of 13.896**. 
  - To incorporate an NLP model to assess twitter or news data we have so far tried to generate a time series dataset of all the news or twitter feed related to each of the companies in the NIFTY-50 dataset and append the news entry of that day with the respective stock price of that company in the dataset. 
+  ![Results from LSTM Notebook](images/result%201.png)
  - On this new dataset, we used sentiment analysis models like Bag-of-Words as a baseline and chose to test with **Word2Vec, BERT, NLTIK, and ERNIE** to generate scores on a scale of +10 to -10 with +10 being extremely positive for the stock’s health to -10 being the worst. 
  - The entire system **updates its news scores** when stock prices correlated to a particular type of news reaches new extremes. 
  
